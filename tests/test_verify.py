@@ -8,13 +8,16 @@ from scripts.verify import verify_repository
 from tests.test_checkpoint import make_checkpoint
 
 REQUIRED_STUBS = (
+    "AGENTS.md",
     "README.md",
-    "protocols/self-driving-v1.md",
+    "docs/protocol.md",
+    "docs/design.md",
+    "docs/baselines/capability.md",
+    "docs/baselines/failure.md",
     "schemas/checkpoint.schema.json",
     "scripts/checkpoint.py",
     "scripts/verify.py",
-    "baselines/sol-capability-audit.md",
-    "baselines/sol-failure-audit.md",
+    "runs/.gitkeep",
 )
 
 
@@ -24,7 +27,6 @@ def make_repo(root):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text("stub\n", encoding="utf-8")
     (root / "tests").mkdir(exist_ok=True)
-    (root / "runs").mkdir(exist_ok=True)
 
 
 class VerifyTests(unittest.TestCase):
@@ -41,6 +43,14 @@ class VerifyTests(unittest.TestCase):
             root = Path(tmp)
             make_repo(root)
             self.assertEqual(verify_repository(root), [])
+
+    def test_rejects_missing_tracked_runs_placeholder(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_repo(root)
+            (root / "runs" / ".gitkeep").unlink()
+            errors = verify_repository(root)
+            self.assertIn("missing required path: runs/.gitkeep", errors)
 
     def test_accepts_valid_checkpoint_chain(self):
         with tempfile.TemporaryDirectory() as tmp:

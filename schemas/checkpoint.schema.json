@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "canary_ok": {
+      "const": true
+    },
+    "chat_ordinal": {
+      "maximum": 3,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "checkpoint_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "previous_checkpoint_hash": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      ]
+    },
+    "previous_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "probe_result": {
+      "oneOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "minProperties": 1,
+          "type": "object"
+        }
+      ]
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "session_status": {
+      "enum": [
+        "HEALTHY",
+        "DEGRADED",
+        "UNRELIABLE",
+        "POLICY_BLOCKED",
+        "TOOL_FAILED",
+        "BLOCKED",
+        "DEAD_OR_UNKNOWN"
+      ]
+    },
+    "step": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "timestamp": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "verification_status": {
+      "const": "PASS"
+    }
+  },
+  "required": [
+    "run_id",
+    "chat_ordinal",
+    "step",
+    "previous_step",
+    "previous_checkpoint_hash",
+    "checkpoint_hash",
+    "canary_ok",
+    "probe_result",
+    "verification_status",
+    "timestamp",
+    "session_status"
+  ],
+  "title": "Agent Capability Lab Checkpoint",
+  "type": "object"
+}

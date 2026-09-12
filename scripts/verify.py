@@ -9,15 +9,17 @@ except ModuleNotFoundError:
     from checkpoint import validate_checkpoint
 
 REQUIRED_PATHS = (
+    "AGENTS.md",
     "README.md",
-    "protocols/self-driving-v1.md",
+    "docs/protocol.md",
+    "docs/design.md",
+    "docs/baselines/capability.md",
+    "docs/baselines/failure.md",
     "schemas/checkpoint.schema.json",
     "scripts/checkpoint.py",
     "scripts/verify.py",
     "tests",
-    "runs",
-    "baselines/sol-capability-audit.md",
-    "baselines/sol-failure-audit.md",
+    "runs/.gitkeep",
 )
 
 
