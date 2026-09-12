@@ -1,0 +1,30 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "d37f87ac0d0f2149842303dafb2d826921065a8627ce0cfc3376c5c9b1e99cd1",
+  "previous_checkpoint_hash": "fa0e976efaac85076dee94e3dd7a604da589e280f22bb310ce8a70dc35ac00c6",
+  "previous_step": 6,
+  "probe_result": {
+    "all_exit_code_zero": true,
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "domain": "agent_runtime_sequential_invocation_reliability",
+    "expected_outputs": [
+      "RUN002_SEQ_1",
+      "RUN002_SEQ_2",
+      "RUN002_SEQ_3",
+      "RUN002_SEQ_4",
+      "RUN002_SEQ_5",
+      "RUN002_SEQ_6"
+    ],
+    "invocations": 6,
+    "successes": 6,
+    "timeouts": 0,
+    "truncations": 0
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 7,
+  "timestamp": "2026-09-12T14:59:35.044094+00:00",
+  "verification_status": "PASS"
+}
