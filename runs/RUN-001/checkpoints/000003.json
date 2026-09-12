@@ -1,0 +1,65 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "0243991b1d88569dffa299e613124b67e09f3f66b408faf1e4b8703a60509aae",
+  "previous_checkpoint_hash": "ad107e7a02e98cf8320fcbaac0d5842771e7a2079bd90155675afb1f8c6ea6ad",
+  "previous_step": 2,
+  "probe_result": {
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "diagnostic_followup": {
+      "exact_platform_block_trigger": "UNKNOWN",
+      "no_bypass_attempted": true,
+      "shasum_probe": "PASS",
+      "wc_size_probe": "PASS"
+    },
+    "domain": "environment_and_repository_filesystem",
+    "environment": {
+      "common_present": {
+        "HOME": true,
+        "LANG": false,
+        "PATH": true,
+        "SHELL": false,
+        "TMPDIR": true,
+        "USER": true
+      },
+      "cwd": "/Users/tienphat/Developer/agent-capability-lab",
+      "env_count": 6,
+      "gid": 20,
+      "platform": "darwin",
+      "python": "3.14.6",
+      "secretish_name_count": 0,
+      "uid": 501,
+      "values_of_secretish_variables_exposed": false
+    },
+    "filesystem": {
+      "content_matches_canary_artifact_by_creation_hash": true,
+      "create_write_succeeded": true,
+      "persistent_artifact": "runs/RUN-001/artifacts/fs-probe.txt",
+      "rename_succeeded": true,
+      "sha256": "a84152cfac53962feffdb1e918b6239e91248481098a9352849a177408c67321",
+      "verified_size_bytes": 40
+    },
+    "policy_events": [
+      {
+        "agent_runtime_result_received": false,
+        "local_execution_began": "UNKNOWN",
+        "observed_side_effects_after_block": "none (.probe-fs absent)",
+        "repository_state_advanced_by_blocked_probe": false,
+        "requested_operation": "compound bounded create/write/hash/rename/read/delete/rmdir under runs/RUN-001/.probe-fs",
+        "result": "POLICY_BLOCKED"
+      },
+      {
+        "agent_runtime_result_received": false,
+        "local_execution_began": "UNKNOWN",
+        "observed_side_effects": "none expected",
+        "requested_operation": "python read/hash/print metadata for committed-target fs artifact",
+        "result": "POLICY_BLOCKED"
+      }
+    ]
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 3,
+  "timestamp": "2026-09-12T14:33:22.317310+00:00",
+  "verification_status": "PASS"
+}
