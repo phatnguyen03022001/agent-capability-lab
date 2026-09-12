@@ -1,0 +1,40 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "fa0e976efaac85076dee94e3dd7a604da589e280f22bb310ce8a70dc35ac00c6",
+  "previous_checkpoint_hash": "4998c77256db517f6ef32d672e38f4b07a487a90536499e8b792522340f2ec85",
+  "previous_step": 5,
+  "probe_result": {
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "domain": "agent_runtime_persistent_pty",
+    "final_poll": {
+      "cursor_expired": false,
+      "dropped_output_bytes": 0,
+      "exit_code": 0,
+      "output": "hello-pty\\r\\nRUN002_PTY_ECHO:hello-pty\\r\\n",
+      "status": "exited"
+    },
+    "first_poll": {
+      "cursor_expired": false,
+      "dropped_output_bytes": 0,
+      "next_cursor": 18,
+      "output": "RUN002_PTY_READY\\r\\n",
+      "status": "running"
+    },
+    "terminal_start": {
+      "accepted": true,
+      "initial_status": "running",
+      "session_id": "119be9f7b9aaeea1"
+    },
+    "terminal_write": {
+      "accepted": true,
+      "data": "hello-pty\\n"
+    }
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 6,
+  "timestamp": "2026-09-12T14:58:24.868786+00:00",
+  "verification_status": "PASS"
+}
