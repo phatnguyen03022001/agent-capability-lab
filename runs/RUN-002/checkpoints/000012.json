@@ -1,0 +1,47 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "60c1a1578001f74ce82a5371989605fd1ae69b26dc820ae001115b2d69bd3977",
+  "previous_checkpoint_hash": "13caeb2a65f0f24b8fc2a77d989f2a1d98a01e1ce5aadadf355f77598df761b5",
+  "previous_step": 11,
+  "probe_result": {
+    "authorization_note": "schema exposure plus authenticated read does not prove successful write authorization",
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "domain": "gmail_drive_connector_auth_and_authority",
+    "gmail": {
+      "authenticated_profile_read": true,
+      "discoverable": true,
+      "profile_identifiers_persisted": false,
+      "profile_schema_loaded": true,
+      "write_examples_exposed": [
+        "send_email",
+        "send_draft",
+        "create_draft",
+        "bulk_label_matching_emails"
+      ],
+      "write_invoked": false,
+      "write_schema_loaded": true
+    },
+    "google_drive": {
+      "authenticated_profile_read": true,
+      "discoverable": true,
+      "profile_identifiers_persisted": false,
+      "profile_schema_loaded": true,
+      "write_examples_exposed": [
+        "create_file",
+        "create_folder",
+        "create_presentation_from_template",
+        "bulk_update_file_comments"
+      ],
+      "write_invoked": false,
+      "write_schema_loaded": true
+    },
+    "message_or_file_content_read": false
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 12,
+  "timestamp": "2026-09-12T15:09:46.095315+00:00",
+  "verification_status": "PASS"
+}
