@@ -1,0 +1,36 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "c5128b7c2694dfcbb4c4c7b8087f84d3305df9ef007892dcf380532b5b420a6a",
+  "previous_checkpoint_hash": "c706c1524ad8e18f4a166b79536aac28c8d52127a6f501ef792f4beac6baa5fc",
+  "previous_step": 1,
+  "probe_result": {
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "domain": "agent_runtime_process_failure_recovery",
+    "missing_executable": {
+      "exit_code": "NOT_RETURNED",
+      "invocation_accepted": true,
+      "local_process_started": false,
+      "tool_error": "Errno 2 No such file or directory"
+    },
+    "nonzero_process": {
+      "exit_code": 7,
+      "stderr": "RUN002_STDERR\\n",
+      "stderr_truncated": false,
+      "stdout": "RUN002_STDOUT\\n",
+      "stdout_truncated": false,
+      "timed_out": false
+    },
+    "recovery": {
+      "exit_code": 0,
+      "stdout": "RUN002_RECOVERY_OK\\n",
+      "timed_out": false
+    }
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 2,
+  "timestamp": "2026-09-12T14:52:43.521262+00:00",
+  "verification_status": "PASS"
+}
