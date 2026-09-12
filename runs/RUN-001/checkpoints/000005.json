@@ -1,0 +1,42 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "2e767ff52c335edb739c08702809065645162eae1efa9b6b16953081e5bbed59",
+  "previous_checkpoint_hash": "5b149a465b771630d61228acbe143faf89cf515b0ac42a2603f32404d19cb78d",
+  "previous_step": 4,
+  "probe_result": {
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "domain": "pty_and_state_continuity",
+    "pty": {
+      "cursor_expired": false,
+      "dropped_output_bytes": 0,
+      "exit_code": 0,
+      "final_next_cursor": 48,
+      "final_output": "hello-canary\\r\\nPTY_ECHO:hello-canary\\r\\n",
+      "final_status": "exited",
+      "initial_next_cursor": 0,
+      "initial_output": "",
+      "interrupt_or_terminate_used": false,
+      "normal_completion": true,
+      "poll_1_next_cursor": 11,
+      "poll_1_output": "PTY_READY\\r\\n",
+      "poll_1_status": "running",
+      "session_id": "dea35d48481a62aa",
+      "start_status": "running",
+      "write_action": "write",
+      "write_data_class": "benign line input",
+      "write_status": "running"
+    },
+    "state_persistence": {
+      "canary_matches_initial": true,
+      "checkpoint_chain_continues": true,
+      "previous_checkpoint_hash_observed": "5b149a465b771630d61228acbe143faf89cf515b0ac42a2603f32404d19cb78d",
+      "run_metadata_reloaded": true
+    }
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 5,
+  "timestamp": "2026-09-12T14:36:08.538552+00:00",
+  "verification_status": "PASS"
+}
