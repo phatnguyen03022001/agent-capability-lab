@@ -1,0 +1,23 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "c97015c832dfa858953cecf3c90b7c518021ee2eba7b1243811481d3bdf7a650",
+  "previous_checkpoint_hash": "90ed952cd4d821f733f85f7d665dcb13eddfe6bf44b35b54646cfb8c7683e678",
+  "previous_step": 8,
+  "probe_result": {
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "derivation": "sha256(canary + pipe + previous_checkpoint_hash + pipe + decimal_step)",
+    "derived_from_checkpoint_step": 8,
+    "derived_token": "8de5dd19c365abea522af4b997e9156667703725c88d081117147039dffb419c",
+    "domain": "deterministic_dependent_endurance",
+    "endurance_step": 1,
+    "previous_checkpoint_hash": "90ed952cd4d821f733f85f7d665dcb13eddfe6bf44b35b54646cfb8c7683e678",
+    "probe_exit_code": 0,
+    "timed_out": false
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 9,
+  "timestamp": "2026-09-12T14:39:41.534143+00:00",
+  "verification_status": "PASS"
+}
