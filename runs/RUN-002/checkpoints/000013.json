@@ -1,0 +1,44 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "fa7c6eb33b9478b513f3cfd78e0c739935ca940f5e9e8f3b6d95fc3a32e4fd5f",
+  "previous_checkpoint_hash": "60c1a1578001f74ce82a5371989605fd1ae69b26dc820ae001115b2d69bd3977",
+  "previous_step": 12,
+  "probe_result": {
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "composition": "Agent Runtime -> repository evidence -> Git push -> GitHub connector remote read",
+    "domain": "cross_surface_repository_composition",
+    "hash_match": true,
+    "initial_local_hash_one_liner": {
+      "local_execution_started": false,
+      "recovery": "canonical checkpoint validator succeeded",
+      "side_effects": "none",
+      "tool_invocation_accepted": false
+    },
+    "local_agent_runtime": {
+      "checkpoint_path": "runs/RUN-002/checkpoints/000012.json",
+      "classification": "MEASURED",
+      "validator_exit_code": 0,
+      "validator_stdout": "CHECKPOINT VALID"
+    },
+    "remote_github_connector": {
+      "checkpoint_path": "runs/RUN-002/checkpoints/000012.json",
+      "classification": "MEASURED",
+      "observed_checkpoint_hash": "60c1a1578001f74ce82a5371989605fd1ae69b26dc820ae001115b2d69bd3977",
+      "read_success": true,
+      "ref": "main"
+    },
+    "session_continuity": {
+      "attribution": "operator-confirmed",
+      "model": "GPT-5.6 Sol",
+      "reasoning_effort": "High",
+      "same_run_canary_preserved": true
+    }
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 13,
+  "timestamp": "2026-09-12T15:11:34.546090+00:00",
+  "verification_status": "PASS"
+}
