@@ -1,0 +1,50 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "13caeb2a65f0f24b8fc2a77d989f2a1d98a01e1ce5aadadf355f77598df761b5",
+  "previous_checkpoint_hash": "393a00c4b46322bf1a05bd2913f29b88a55d0f9219064804a4fc1832044d2928",
+  "previous_step": 10,
+  "probe_result": {
+    "authenticated_profile_read": {
+      "identifiers_persisted": false,
+      "success": true
+    },
+    "authorization_note": "reported write permission is not successful mutation proof",
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "discovery": "MEASURED",
+    "domain": "github_connector_read_authority_and_failure",
+    "missing_file_failure": {
+      "false_success": false,
+      "http_status": 404,
+      "is_error": true,
+      "success": false
+    },
+    "remote_checkpoint_read": {
+      "checkpoint_hash": "393a00c4b46322bf1a05bd2913f29b88a55d0f9219064804a4fc1832044d2928",
+      "path": "runs/RUN-002/checkpoints/000010.json",
+      "ref": "main",
+      "success": true
+    },
+    "repository_read": {
+      "default_branch": "main",
+      "reported_permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "repository": "phatnguyen03022001/agent-capability-lab",
+      "success": true
+    },
+    "schema_loaded": "MEASURED",
+    "write_surface_exposed": true,
+    "write_via_connector_tested": false
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 11,
+  "timestamp": "2026-09-12T15:08:54.282499+00:00",
+  "verification_status": "PASS"
+}
