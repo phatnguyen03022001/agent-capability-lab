@@ -1,0 +1,46 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "61b894466511b407ff472f03a21f08d9822d1186ca4a4b65ea8b52ea1556d8bc",
+  "previous_checkpoint_hash": "c4ecc366f6331c29df2d8520dd7160d7820fbf35f3d9db17147ca25cc5199fee",
+  "previous_step": 8,
+  "probe_result": {
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "click": {
+      "link_id": 6,
+      "result_ref": "turn292789view0",
+      "source_ref": "turn111036view0",
+      "success": true,
+      "title": "zlib — Compression compatible with gzip — Python 3.14.7 documentation"
+    },
+    "domain": "web_search_open_click_reference_behavior",
+    "invalid_reference": {
+      "error": "invalid ref_id argument",
+      "false_content_success": false,
+      "requested_ref": "turn999999search999",
+      "success": false
+    },
+    "open": {
+      "result_ref": "turn111036view0",
+      "source_ref": "turn567382search0",
+      "success": true
+    },
+    "reference_continuity": {
+      "open_success": true,
+      "result_ref": "turn429208view0",
+      "source_ref": "turn292789view0"
+    },
+    "search": {
+      "primary_ref": "turn567382search0",
+      "query": "Python hashlib documentation site:docs.python.org",
+      "success": true,
+      "title": "hashlib — Secure hashes and message digests — Python 3.14.7 documentation"
+    }
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 9,
+  "timestamp": "2026-09-12T15:02:58.204219+00:00",
+  "verification_status": "PASS"
+}
