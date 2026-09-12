@@ -1,0 +1,53 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "4998c77256db517f6ef32d672e38f4b07a487a90536499e8b792522340f2ec85",
+  "previous_checkpoint_hash": "e7ef3aab4c7cb717499494997ad1698f4947baa506924accacbda1188037f4a2",
+  "previous_step": 4,
+  "probe_result": {
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "domain": "agent_runtime_environment_and_filesystem",
+    "environment_shape": {
+      "cwd": "/Users/tienphat/Developer/agent-capability-lab",
+      "env_count": 6,
+      "has_HOME": true,
+      "has_PATH": true,
+      "has_SHELL": false,
+      "has_TMPDIR": true,
+      "machine": "arm64",
+      "platform_release": "25.6.0",
+      "platform_system": "Darwin",
+      "python": "3.14.6",
+      "secret_values_read": false
+    },
+    "filesystem": {
+      "files": [
+        {
+          "bytes": 35,
+          "path": "runs/RUN-002/artifacts/fs-probe/nested/unicode.txt",
+          "sha256": "b85f69c638bb34d1e574a469631825d66db722ae4c45418f7aebd2592b4b22b8"
+        },
+        {
+          "bytes": 28,
+          "path": "runs/RUN-002/artifacts/fs-probe/nested/đường-dẫn.txt",
+          "sha256": "8ffe33c663e02f0fced013725be12091643b3c9dd95044ec8c838a1552e87e37"
+        }
+      ],
+      "nested_directory_write_read": "MEASURED",
+      "unicode_content": "MEASURED",
+      "unicode_filename": "MEASURED"
+    },
+    "initial_complex_write_attempt": {
+      "local_execution_started": false,
+      "recovery": "simplified probes succeeded",
+      "side_effects": "none",
+      "tool_invocation_accepted": false
+    }
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 5,
+  "timestamp": "2026-09-12T14:57:22.253406+00:00",
+  "verification_status": "PASS"
+}
