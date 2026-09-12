@@ -1,0 +1,31 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "efef247f61161070ad076ec411698623c59f945b9c879d2480ea85f529b9517d",
+  "previous_checkpoint_hash": "2e767ff52c335edb739c08702809065645162eae1efa9b6b16953081e5bbed59",
+  "previous_step": 5,
+  "probe_result": {
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "domain": "git_network_publication_and_evidence_semantics",
+    "first_remote_proven_checkpoint": 5,
+    "last_proven_alive_after_verification": 5,
+    "local_head_after_push": "3279c634fae9613b8825368eb695aee9a7f9872a",
+    "local_head_before_push": "3279c634fae9613b8825368eb695aee9a7f9872a",
+    "pre_push_relation": "local_ahead_remote",
+    "push": {
+      "command": "git push origin main",
+      "exit_code": 0,
+      "stderr_summary": "9b6b7f5..3279c63 main -> main",
+      "stdout": ""
+    },
+    "remote_equals_local_after_push": true,
+    "remote_main_after_push": "3279c634fae9613b8825368eb695aee9a7f9872a",
+    "remote_main_before_push": "9b6b7f587d5c8779257837d9606e269bbafee7ee",
+    "semantic_conclusion": "local commits were LOCAL_PROVEN only until successful push plus remote SHA equality"
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 6,
+  "timestamp": "2026-09-12T14:37:31.048663+00:00",
+  "verification_status": "PASS"
+}
