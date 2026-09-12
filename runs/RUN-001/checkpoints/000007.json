@@ -1,0 +1,25 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "30b9aeb5cff52780bdfb4169cd7bb52b053536429d19be7f5fbf8cc0611d9a62",
+  "previous_checkpoint_hash": "efef247f61161070ad076ec411698623c59f945b9c879d2480ea85f529b9517d",
+  "previous_step": 6,
+  "probe_result": {
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "domain": "cwd_behavior",
+    "git_toplevel_exit_code": 0,
+    "git_toplevel_from_nested": "/Users/tienphat/Developer/agent-capability-lab",
+    "nested_cwd": "/Users/tienphat/Developer/agent-capability-lab/runs/RUN-001",
+    "nested_pwd_exit_code": 0,
+    "nested_pwd_stdout": "/Users/tienphat/Developer/agent-capability-lab/runs/RUN-001\n",
+    "outside_authorized_tree_tested": false,
+    "relative_run_json_exists": true,
+    "relative_test_exit_code": 0,
+    "root_cwd_probe": "/Users/tienphat/Developer/agent-capability-lab"
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 7,
+  "timestamp": "2026-09-12T14:38:17.465601+00:00",
+  "verification_status": "PASS"
+}
