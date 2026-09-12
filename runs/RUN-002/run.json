@@ -1,0 +1,12 @@
+{
+  "baseline_head": "e83de0f723bf57acbdf22756e140b2d62e89bd14",
+  "branch": "main",
+  "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+  "chat_ordinal": 1,
+  "model": "GPT-5.6 Sol",
+  "model_attribution": "operator-confirmed",
+  "reasoning_effort": "High",
+  "run_id": "RUN-002",
+  "single_chat_only": true,
+  "started_at": "2026-09-12T14:51:43.403647+00:00"
+}
