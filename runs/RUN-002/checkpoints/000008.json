@@ -1,0 +1,56 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "c4ecc366f6331c29df2d8520dd7160d7820fbf35f3d9db17147ca25cc5199fee",
+  "previous_checkpoint_hash": "d37f87ac0d0f2149842303dafb2d826921065a8627ce0cfc3376c5c9b1e99cd1",
+  "previous_step": 7,
+  "probe_result": {
+    "canary": "CANARY-bc86554b977f0aeb732dd352a44b8d43",
+    "classification": "MEASURED",
+    "container": {
+      "machine": "x86_64",
+      "platform": "Linux",
+      "shared_mnt_data": "MEASURED"
+    },
+    "domain": "hosted_compute",
+    "error_semantics": {
+      "intentional_error": "RuntimeError RUN002_INTENTIONAL_HOSTED_ERROR",
+      "partial_side_effect_independently_verified": true,
+      "tool_reported_failure": true,
+      "transactional_rollback": false
+    },
+    "files": [
+      {
+        "bytes": 20,
+        "path": "/mnt/data/run002_hosted.txt",
+        "python_to_container_shared": true,
+        "sha256": "a53f09d52726e2dfecb07e2079e49e33e00f58fc4ed418bd2799e17b1f243e06"
+      },
+      {
+        "path": "/mnt/data/run002_partial.txt",
+        "sha256": "c277dcf7653596d7e3bd6d20034937dd1d69d08b3cad087d53ce8e3e2bbc9755",
+        "survived_failed_python_call": true
+      },
+      {
+        "bytes": 31,
+        "path": "/mnt/data/run002_handoff.txt",
+        "python_user_visible_handoff": true,
+        "sha256": "09a46fd3fa9312f8334654e5db42729fa443475669d624bb3ca9f0d9883a25e5"
+      }
+    ],
+    "python": {
+      "cwd": "/home/oai",
+      "machine": "x86_64",
+      "platform": "Linux",
+      "python": "3.13.5",
+      "release": "6.18.35",
+      "state_continuity": "MEASURED"
+    },
+    "separation_from_local_mac": "CONFIRMED"
+  },
+  "run_id": "RUN-002",
+  "session_status": "HEALTHY",
+  "step": 8,
+  "timestamp": "2026-09-12T15:02:01.424024+00:00",
+  "verification_status": "PASS"
+}
