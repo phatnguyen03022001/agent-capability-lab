@@ -1,0 +1,30 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "ad107e7a02e98cf8320fcbaac0d5842771e7a2079bd90155675afb1f8c6ea6ad",
+  "previous_checkpoint_hash": "43f362cecb9cf3d74f193df7d9a233ec9ef70a09428e43db8eeb610622910c17",
+  "previous_step": 1,
+  "probe_result": {
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "domain": "stdout_stderr_exit_failure_recovery",
+    "failure_exit_code": 7,
+    "failure_stderr": "ERR_MARKER\n",
+    "failure_stderr_truncated": false,
+    "failure_stdout": "OUT_MARKER\n",
+    "failure_stdout_truncated": false,
+    "failure_timed_out": false,
+    "invocation_accepted": true,
+    "local_execution_began": true,
+    "recovery_exit_code": 0,
+    "recovery_stdout": "RECOVERY_OK\n",
+    "recovery_succeeded": true,
+    "repository_state_advanced_by_probe": false,
+    "requested_operation": "python process emits stdout/stderr then exits 7; follow with successful process",
+    "side_effects": "none_expected"
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 2,
+  "timestamp": "2026-09-12T14:30:25.461267+00:00",
+  "verification_status": "PASS"
+}
