@@ -1,0 +1,61 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "5b149a465b771630d61228acbe143faf89cf515b0ac42a2603f32404d19cb78d",
+  "previous_checkpoint_hash": "0243991b1d88569dffa299e613124b67e09f3f66b408faf1e4b8703a60509aae",
+  "previous_step": 3,
+  "probe_result": {
+    "bounded_output": {
+      "exit_code": 0,
+      "hard_output_limit": "UNKNOWN",
+      "proven_untruncated_lower_bound_stderr_bytes": 2000,
+      "proven_untruncated_lower_bound_stdout_bytes": 50000,
+      "stderr_requested_bytes": 2000,
+      "stderr_truncated": false,
+      "stdout_requested_bytes": 50000,
+      "stdout_truncated": false,
+      "timed_out": false
+    },
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "domain": "timeout_bounded_output_representation",
+    "representation_sensitivity": {
+      "literal_argv": {
+        "argv": [
+          "printf",
+          "REPRESENTATION_OK\\n"
+        ],
+        "exit_code": 0,
+        "stdout": "REPRESENTATION_OK\n"
+      },
+      "same_result": true,
+      "scope": "single harmless equivalent command only",
+      "shell_wrapper": {
+        "argv": [
+          "/bin/sh",
+          "-lc",
+          "printf 'REPRESENTATION_OK\\n'"
+        ],
+        "exit_code": 0,
+        "stdout": "REPRESENTATION_OK\n"
+      }
+    },
+    "timeout": {
+      "after_sleep_marker_observed": false,
+      "exit_code": -15,
+      "invocation_accepted": true,
+      "local_execution_began": true,
+      "recovery_stdout": "TIMEOUT_RECOVERY_OK\n",
+      "recovery_succeeded": true,
+      "requested_sleep_seconds": 3,
+      "stderr": "",
+      "stdout": "BEFORE_SLEEP\n",
+      "timed_out": true,
+      "tool_timeout_seconds": 1
+    }
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 4,
+  "timestamp": "2026-09-12T14:35:17.539251+00:00",
+  "verification_status": "PASS"
+}
