@@ -1,0 +1,33 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "43f362cecb9cf3d74f193df7d9a233ec9ef70a09428e43db8eeb610622910c17",
+  "previous_checkpoint_hash": null,
+  "previous_step": 0,
+  "probe_result": {
+    "baseline_head": "9b6b7f587d5c8779257837d9606e269bbafee7ee",
+    "branch": "main",
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "cwd": "/Users/tienphat/Developer/agent-capability-lab",
+    "domain": "agent_runtime_discovery_and_invocation",
+    "exit_code": 0,
+    "invocation_accepted": true,
+    "local_execution_began": true,
+    "repository_verify": "PASS",
+    "requested_operation": "pwd",
+    "schema_availability": "CONFIRMED",
+    "stderr": "",
+    "stderr_truncated": false,
+    "stdout": "/Users/tienphat/Developer/agent-capability-lab\n",
+    "stdout_truncated": false,
+    "timed_out": false,
+    "tool_discovery": "CONFIRMED",
+    "transport_path": "end_to_end_local_execution_proven_tunnel_stage_not_independently_isolated",
+    "unit_tests": "15_pass"
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 1,
+  "timestamp": "2026-09-12T14:28:59.513809+00:00",
+  "verification_status": "PASS"
+}
