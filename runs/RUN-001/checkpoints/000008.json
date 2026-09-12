@@ -1,0 +1,27 @@
+{
+  "canary_ok": true,
+  "chat_ordinal": 1,
+  "checkpoint_hash": "90ed952cd4d821f733f85f7d665dcb13eddfe6bf44b35b54646cfb8c7683e678",
+  "previous_checkpoint_hash": "30b9aeb5cff52780bdfb4169cd7bb52b053536429d19be7f5fbf8cc0611d9a62",
+  "previous_step": 7,
+  "probe_result": {
+    "canary": "CANARY-ceac5853e50b49b888750eccf1e78551",
+    "domain": "process_spawn_failure_and_recovery",
+    "exit_code": "not_available_process_never_started",
+    "local_process_spawn_succeeded": false,
+    "recovery_exit_code": 0,
+    "recovery_stdout": "SPAWN_FAILURE_RECOVERY_OK\n",
+    "recovery_succeeded": true,
+    "repository_state_advanced_by_failed_probe": false,
+    "requested_operation": "execute deliberately nonexistent binary __agent_capability_lab_nonexistent__",
+    "returned_error": "[Errno 2] No such file or directory",
+    "session_interpretation": "HEALTHY_AFTER_HARMLESS_FAILURE",
+    "side_effects_observed": "none",
+    "tool_invocation_accepted": true
+  },
+  "run_id": "RUN-001",
+  "session_status": "HEALTHY",
+  "step": 8,
+  "timestamp": "2026-09-12T14:38:56.543316+00:00",
+  "verification_status": "PASS"
+}
